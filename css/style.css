@@ -1,0 +1,731 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+    min-height: 100vh;
+}
+
+.heading {
+  padding: 0.5rem;
+}
+
+h2{
+    text-transform: capitalize;
+    color: red;
+    line-height: 1.6;
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif; */
+    font-family: 'Oleo Script', cursive;
+   
+}
+
+.menu-button{
+    padding: 10px 20px;
+
+    background-color: rgba(24, 20, 41, 0.959);
+    border: 1px solid burlywood;
+    margin-right: 1rem;
+   
+}
+.menu-button:hover{
+background-color:rgba(53, 26, 177, 0.98); 
+color: cornsilk;
+transition: all 1s ease-in;
+
+}
+
+
+
+.menu-button-text{
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+div.dropdown-menu.show{
+   
+    margin-right: 1rem;
+    
+}
+.dropdown-item{
+    font-size: .8rem;
+    padding: 6px 7px;
+    color: blue;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(68, 53, 53);
+}
+.dropdown-item:hover{
+background-color: crimson;
+}
+/* for home button */
+.home-button{
+    padding: 10px 40px;
+
+    background-color: rgba(24, 20, 41, 0.959);
+    border: 1px solid burlywood;
+    margin-left: 1rem;
+}
+.home-button a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px ;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* home button done */
+
+/* for menu-toggle */
+.menu-toggle {
+  cursor: pointer;
+  width: 55px;
+  z-index: 3;
+  color: rgba(32, 25, 25, 0.904);
+}
+
+.menu-toggle div {
+  margin-left: .5rem;
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.3);
+  height: 7px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
+}
+
+.menu-toggle .one,
+.menu-toggle .two {
+  margin-bottom: 7px;
+  color: black;
+}
+
+
+
+
+.menu-toggle.active .one {
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+    transform: translate(0, 14px) rotate(45deg);
+   
+}
+
+.menu-toggle.active .two {
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(-55px);
+    
+}
+
+.menu-toggle.active .three {
+    box-shadow: 0px 3px 13px rgba(0, 0, 0, .4);
+    transform: translate(0, -14px) rotate(-45deg);
+}
+
+/* menu toggle done */
+.middle-section{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.middle-section::after{
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../image/pizza-img-home-3.jpg");
+    /* background-image: url("../image/pizza-img-home2.jpg"); */
+    /* url("../image/pizza-img-home.jpg"); */
+    /* url("../image/pizza-img-home2.jpg"),*/
+    /* url("../image/pizza-img-home-3.jpg");  */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle-business-name{ 
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    padding: 10px 35px;  
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 900;  
+    line-height:1.9 ;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    border: 1px solid orange;
+}
+.delivery-and-pickup-buttons{
+    margin-top: 10px;    
+    text-transform: uppercase;
+    color: black;
+    font-size: .9rem;
+    font-weight: 500;  
+    cursor: pointer;
+    
+    
+}
+.order-delivery-button{
+    background: orangered;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+.order-pickup-button{
+    background:orangered;
+    padding: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+.middle-business-name:hover{
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: .8;
+    font-family: 'Oleo Script', cursive;
+    transition: all .5s ease-in-out;
+
+}
+.order-delivery-button:hover{
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: .8;
+    font-family: 'Oleo Script', cursive;
+    transition: all .5s ease-in-out;
+}
+.order-pickup-button:hover{
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: .8;
+    font-family: 'Oleo Script', cursive;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.pickup-hour{
+    margin-left: 20px;
+    text-align: center;
+}
+.pizza-address{
+    margin: 5px auto;
+    margin: 0 auto;
+    display: table;
+    box-shadow: 5px 10px 20px rgba(128, 112, 112, 0.747);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.day{
+    margin-right: 200px;
+    margin-left: 15px;
+}
+.time{
+    margin-left: 200px;
+    margin-right: 15px;
+}
+@media(max-width:768px){
+    .day{
+        margin-right: 50px;
+    }
+    .time{
+        margin-left: 50px;
+    
+    }
+}
+
+/* about toggle otherone contents */
+.toggle-wrapper{
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(223, 202, 202);
+}
+.show{
+    display: block;
+}
+.notShow{
+    display:none !important;
+}
+
+.name-link{
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 2rem 0;
+    margin:2rem 0;
+    background-color: rgba(255, 255, 255, 0.81);
+
+    cursor: pointer;
+
+}
+
+.name-link:hover{
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+/* middle-section-about */
+.middle-section-about{
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.middle-section-about::after{
+    content: "";
+    opacity: 0.95;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /* background-image: linear-gradient(to right,red,blue,white,yellow,green ); */
+    /* background-image: url("../image/pizza-img-home-3.jpg"); */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../image/pizza-img-home2.jpg");
+    /* url("../image/pizza-img-home.jpg"); */
+    /* url("../image/pizza-img-home2.jpg"),*/
+    /* url("../image/pizza-img-home-3.jpg");  */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle-section-about-text{ 
+    text-transform: uppercase;
+    color: white;
+    
+    padding: 10px 35px;  
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 900;  
+    line-height:1.9 ;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 1px solid orange;
+}
+
+.middle-section-about-some-text{
+    margin-top: 2rem;
+    margin-left: 50%; /* From parent width */
+    transform: translateX(-40%); 
+}
+
+.about-image-second{
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    background-attachment: scroll;
+    background-position: center;
+    width: 100%;
+    margin: 1rem auto;
+    width: 500px;
+    margin-bottom: 1rem;
+  
+   
+    
+}
+
+
+/* menu pizza item section */
+.card-image-pizza {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.clearfix{
+    overflow: auto;
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+.img2{
+    float:right;
+}
+/* .img2::after{
+    content: "";
+    clear: both;
+} */
+
+.containers{
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid blue;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 14px 9px black;
+    text-shadow: 1px 0px 0px black;
+}
+
+
+/* google map */
+#map {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+  }
+
+  /* google map done */
+
+
+  .modal-header .close{
+      padding:0;
+      margin:0;
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+/* modal done */
+
+/* cart info in order.html */
+.cart-info{
+    background-color: rgba(24, 20, 41, 0.959);
+    border: 1px solid burlywood;
+    padding: 10px 15px;
+    color: cornsilk;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.cart-info:hover{
+background-color:rgba(53, 26, 177, 0.98); 
+color: cornsilk;
+transition: all 1s ease-in;
+}
+
+#myBtn.btn.btn-lg{
+    background-color:  rgba(24, 20, 41, 0.959);
+    color: white;
+    padding: 10px 15px;
+}
+
+/* order-pizza parts */
+.select-button{
+    width: 50%;
+    padding: 5x;
+    border-radius: 20px;
+    margin: 10px 0 10px 10px ;
+}
+
+.input-group{
+width:50%;
+margin-top: 5px;
+margin-left: 10px;
+margin-bottom: 10px;
+border-radius: 20px;
+
+}
+.fix-rounded-left{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.fix-rounded-right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+
+}
+
+/* .cheese-pizza-order-now{
+display: none !important;
+} */
+
+.text-center{
+    text-align: center !important;
+}
+.label{
+   
+    border: 1px solid blue;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 18px;  
+    text-align: center; 
+    cursor: pointer; 
+
+}
+
+/* for allmenuitems  start */
+
+p.lead{
+    color: red;
+}
+
+.image-container{
+    height:200px;
+    width:100% ;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+}
+
+.deal-image{
+    background-image: url(https://www.ocpizzamambo.com/wp-content/uploads/2013/04/800x536-hotwings-and-pizza.jpg) ;
+    height:200px;
+    
+}
+
+.img-rounded{
+    border-radius: 8px;
+}
+
+
+
+div.pizza-image1{
+    background-image:url(../image/pizza-img-container-1.jpg);
+    /* background-image: url(https://www.ocpizzamambo.com/wp-content/uploads/2013/04/800x536-hotwings-and-pizza.jpg) ; */
+    
+}
+div.pizza-image2{
+    background-image:url(../image/image-container-2.jpg);
+   
+}
+.wing-image1{
+background-image: url(../image/wing-image1.jpg);
+}
+.wing-image2{
+    background-image: url(../image/wing-image2.jpg);
+}
+.pasta-image1{
+background-image: url(../image/pasta-image1.jpg);
+
+
+}
+.pasta-image2{
+    background-image: url(../image/pasta-image2.jpg);
+}
+
+.desert-image1{
+background-image:url(../image/desert-image2.jpg)
+}
+.desert-image2{
+    background-image:url(../image/desert-image2.jpg)
+
+}
+.drink-image1{
+background-image: url(../image/drink-image1.webp);
+}
+.drink-image2{
+    background-image: url(../image/drink-image2.jpg);
+
+}
+div a {
+    color: red;
+}
+a:hover{
+    text-decoration: none !important;
+
+}
+.red-color{
+ color: red;
+}
+/*{
+     for allmenuitems  end */
+element.style{
+    display: block !important;
+}
+
+/* for start of cartitems section after you click cart-info */
+.add-button{
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: 100%;
+    color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block
+}
+.check-out-button{
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: 100%;
+    color: white !important;
+    background: red;
+    border-radius: 10px;
+    text-transform: uppercase;
+   display: inline-block;
+}
+.price-item-remove{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+@media (max-width: 576px) { 
+    .add-more-food-button{
+        margin-bottom: .5rem;
+    }
+    .enter-coupan-button{
+        margin-bottom: .5rem;
+    }
+ }
+
+ .solid-line{
+     width: 100%;
+     background-color: red;
+     height: 3px;
+ }
+ .line{
+    background-color:#201a1a;
+     height: 1px;
+ }
+
+ .order-display{
+     border: 1px solid rgb(124, 89, 89);
+     margin-bottom: 3rem;
+ }
+
+ /* for end of cartitems section after you click cart-info */
+
+ /* start of sign-in form /sign up*/
+ .input-form{
+     border-radius: 30px;
+ }
+
+ .form-label{
+     font-weight:600;
+ }
+
+ .forgot-password{
+     
+     float: right;
+     text-transform: capitalize;
+     color: rgba(53, 26, 177, 0.98);
+     font-weight: 600;
+ }
+
+ .form-for-signUp{
+     border: 1px solid rgba(0, 0, 0, 0.836);
+     padding: 15px;
+     margin-bottom: 20px;
+     
+ }
+
+ .sign-in-border{
+    border: 1px solid rgba(0, 0, 0, 0.836);
+    padding: 15px;
+    margin-top: 2rem;
+ }
+
+ @media (max-width: 576px) { 
+    .small-button{
+        min-width: 12rem;
+        padding: 10px;
+        width: 100%;
+    }
+    
+ }
+
+ .sign-up-modal{
+     position: absolute;
+     z-index: 1000;
+     width: 400px;
+     left: 50%;
+     top: 20% ;
+     bottom: 50%;
+     right: 50%;
+     height:200px;
+     text-align: center;
+     background: rgb(155, 149, 149);
+ }
+ /* end of sign-in form */
+
+ /* start of pizza order */
+.order-top-list{
+   
+    margin-top: 50px;
+    border-top: 2px solid rgba(151, 142, 160, 0.904);
+    border-bottom:2px solid rgba(151, 142, 160, 0.904); 
+}
+
+.link{
+   
+   color: rgb(179, 13, 13);
+    padding:20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    background-color: cornflowerblue;
+    color: white;
+
+}
+
+.image-for-order-top{
+    padding-top: 5px;
+    margin-top: 2px;
+    background-image:url(../image/image-container-2.jpg);
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 2rem;
+}
+
+.wing-col{
+    margin-right: 0;
+}
+
+
+.btn-danger,.btn-primary{
+    border-radius: 20px;
+}
+
+/* this is about cart while in small screen */
+@media(max-width:768px){
+
+    .cart-info{
+       
+        padding: 5px 25px;
+    }
+    .fa-shopping-cart:before{
+   
+        display: none;
+    }
+    .cart-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .items-use{
+        display: none;
+    }
+}
+
+@media(max-width:568px){
+    .order-business-name{
+        display: none;
+    }
+}
+/* this was about cart while in small screen */

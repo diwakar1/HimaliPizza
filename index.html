@@ -1,0 +1,155 @@
+<!-- this is the main home page. this project mainly have 3 pages index.html, order-pizza.html and allmenuitems.html -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hello, world!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Oleo+Script&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- home wrapper wraps all contents -->
+    <div class="home-wrapper ">
+        <!-- this is heading -->
+        <div class="heading d-flex justify-content-between align-items-center w-100">
+            <div class="menu-toggle ">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="business-name">
+                <h2>Himali Pizza</h2>
+            </div>
+
+            <div class="menu-button dropdown">
+                <a href="#" class="menu-button-text" id="dropdownMenuButton" data-toggle="dropdown">View menu</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="./orderPizza.html#pizzaOne-section">Pizza</a>
+                    <a class="dropdown-item" href="./orderPizza.html#wings-section">Wings</a>
+                    <a class="dropdown-item" href="./orderPizza.html#past-section">pasta</a>
+                    <a class="dropdown-item" href="./orderPizza.html#deserts-section">Deserts</a>
+                    <a class="dropdown-item" href="./orderPizza.html#drinks-section">Drinks</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="middle-section-home-wrapper ">
+                <div class="middle-section ">
+                    <div class="middle-business-name">Himali Pizza</div>
+                    <div class="delivery-and-pickup-buttons">
+                        <span class="order-delivery-button">order delivery</span>
+                        <span class="order-pickup-button"> order-pickup</span>
+                    </div>
+                </div>
+                <div class="address-section ">
+                    <div>
+                        <h2 class="text-center my-5">Locations & Hours</h2>
+                    </div>
+                    <div class="pizza-address">
+                        <div class="text-center">
+                            <h4>Himali Pizza</h4>
+                            <p>1111 example street, Baltimore, MD 00000</p>
+                            <p>(111) 111 - 1111</p>
+                            <h3><span class="mr-5">delivery Hours</span> <span class="ml-5">Pick up Hours</span></h3>
+                        </div>
+
+                        <div class="schuadle">
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                            <p><span class="day">Wednesday</span><span class="time">10:00 AM -10:00 PM</span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-wrapper notShow">
+                <div class="container">
+                    <p class="name-link home">Home</p>
+                    <p class="name-link home-link-about">about</p>
+                    <p class="name-link name-link-address">address</p>
+
+                </div>
+
+            </div>
+            <div class="middle-section-about-wrapper notShow" id="about">
+                <div class="middle-section-about">
+                    <div class="middle-section-about-text">about us</div>
+                </div>
+
+                <div class=" middle-section-about-some-text justify-content-center">
+                    <div class="col-md-10">
+                        <p>Pizza Himali is currently located at 111 example street, baltimore, MD 00000. Order your
+                            favorite pizza, pasta, salad, and more, all with the click of a button.
+
+                            Himali Pizza accepts orders online for pickup and delivery.</p>
+                    </div>
+                </div>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <div class="about-image-second card">
+                            <img src="./image/pizza-img-home.jpg" class="card-img-top" alt="pizza">
+                            <div class="card-body">
+                                <p class="card-text text-center">Himali Pizza.</p>
+                                <P class="card-text text-center">111, example street,Baltimore,Md,00000 </P>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="google-address py-3 notShow ">
+               <div class="container">
+               
+                <div id="map"></div>
+                <h2 class="text-center py-3">store address in map</h2> 
+               </div>
+               </div>
+           
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF5WGOpQ_8C1e2OOwHZaoKk4etxhMm-EQ&callback=initMap"
+    type="text/javascript"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
